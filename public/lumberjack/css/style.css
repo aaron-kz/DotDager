@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: #d3f7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#app {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+}
+.game {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 150px); /* Ajuste dinámico para el canvas */
+}
+canvas {
+    width: 100%;
+    height: 100%;
+}
+.control {
+    background-color: #d3f7ff;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+}
+.btn-control {
+    width: 120px; /* Tamaño para pantallas grandes */
+    height: 120px; /* Tamaño para pantallas grandes */
+    font-size: 1.5rem; /* Tamaño para pantallas grandes */
+    border-radius: 50%;
+    background-color: #40407a;
+    border: 1rem solid #2c2c54;
+    color: #fff;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.btn-control:active {
+    background-color: #706fd3;
+    border: 1rem solid #474787;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    #app {
+        height: 100%;
+    }
+    .game {
+        height: calc(100vh - 120px);
+    }
+    .btn-control {
+        width: 80px;
+        height: 80px;
+        font-size: 1rem;
+        border: 0.5rem solid #2c2c54;
+    }
+    .btn-control:active {
+        border: 0.5rem solid #474787;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-control {
+        width: 60px;
+        height: 60px;
+        font-size: 0.8rem;
+        border: 0.3rem solid #2c2c54;
+    }
+    .btn-control:active {
+        border: 0.3rem solid #474787;
+    }
+}
