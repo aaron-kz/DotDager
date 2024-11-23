@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       animation: {
-        "skew-scroll": "skew-scroll 15s linear infinite",
+        "skew-scroll": "skew-scroll 18s linear infinite",
       },
       colors: {
         secondary: "#1a1a1a",

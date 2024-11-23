@@ -1,19 +1,10 @@
----
-const styleHref = "/lumberjack/css/style.css";
-const scriptSrc1 = "/lumberjack/js/Helper.js";
-const scriptSrc2 = "/lumberjack/js/Person.js";
-const scriptSrc3 = "/lumberjack/js/Tree.js";
-const scriptSrc4 = "/lumberjack/js/Lumberjack.js";
-const scriptSrc5 = "/lumberjack/js/main.js";
----
-
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lumberjack</title>
-        <link rel="stylesheet" href={styleHref} />
+        <link rel="stylesheet" href="/lumberjack/css/style.css" />
         <link rel="icon" type="image/x-icon" href="Dot-Dager.jpeg" />
     </head>
     <body>
@@ -26,10 +17,10 @@ const scriptSrc5 = "/lumberjack/js/main.js";
                 <button class="btn-control" id="move-right">RIGHT</button>
             </div>
         </div>
-        <script src={scriptSrc1}></script>
-        <script src={scriptSrc2}></script>
-        <script src={scriptSrc3}></script>
-        <script src={scriptSrc4}></script>
-        <script src={scriptSrc5}></script>
+        <script is:inline src="/lumberjack/js/Helper.js"></script>
+        <script is:inline src="/lumberjack/js/Person.js"></script>
+        <script is:inline src="/lumberjack/js/Tree.js"></script>
+        <script is:inline src="/lumberjack/js/Lumberjack.js"></script>
+        <script is:inline src="/lumberjack/js/main.js"></script>
     </body>
 </html>
